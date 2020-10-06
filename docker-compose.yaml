@@ -2,7 +2,7 @@ version: "3"
 
 services:
   php:
-    image: php:7.3.8-apache
+    image: php:7.4.11-apache
     volumes:
        - ./html/:/var/www/html/
        - ./httpd/000-default.conf:/etc/apache2/sites-enabled/000-default.conf       
