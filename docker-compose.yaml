@@ -1,0 +1,15 @@
+version: "3"
+
+services:
+  php:
+    image: php:7.3.8-apache
+#    command: wait-for pingdirectory:389 -t 420 -- entrypoint.sh start-server
+    environment:
+      - SERVER_PROFILE_URL=https://jeremybcarrier:bc0efb775a78239b3885f70452c7d252531f7c24@github.com/jeremybcarrier/postReceiver.git
+#      - SERVER_PROFILE_PATH=pingfederate
+#    env_file:
+#      - ~/.pingidentity/devops
+#      - ./env_vars
+    ports:
+      - 443:443
+      - 80:80
