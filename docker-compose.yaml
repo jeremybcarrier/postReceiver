@@ -5,8 +5,8 @@ services:
     image: php:7.3.8-apache
     volumes:
        - ./html/:/var/www/html/
-       - ./httpd/000-default.conf /etc/apache2/sites-enabled/000-default.conf       
-       - ./httpd/php.ini /usr/local/etc/php/php.ini
+       - ./httpd/000-default.conf:/etc/apache2/sites-enabled/000-default.conf       
+       - ./httpd/php.ini:/usr/local/etc/php/php.ini
 #      - ./httpd/000-default-ssl.conf /etc/apache2/sites-enabled
 #      - ./httpd/server.key /etc/apache2/
 #      - ./httpd/server.crt /etc/apache2
