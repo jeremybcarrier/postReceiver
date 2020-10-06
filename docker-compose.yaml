@@ -10,7 +10,7 @@ services:
 #      - ./httpd/000-default-ssl.conf /etc/apache2/sites-enabled
 #      - ./httpd/server.key /etc/apache2/
 #      - ./httpd/server.crt /etc/apache2
-#    command: /bin/sh -c "a2enmod ssl && docker-php-ext-install mysqli && docker-php-ext-enable mysqli"
+    command: /bin/sh -c "a2enmod ssl && docker-php-ext-install mysqli && docker-php-ext-enable mysqli"
     ports:
       - 443:443
       - 80:80
